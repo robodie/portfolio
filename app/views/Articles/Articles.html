@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<div class="container" scrolly-scroll="">
+    <div class="bs-docs-section">
+        <div class="page-header">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>{{name}}</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <form novalidate class="form-inline clearfix ng-grid-header" name="filterForm">
+                    <div class="form-group pull-right">
+                        <label for="filterText" class="sr-only">Filter</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="filterText" placeholder="Filter..." ng-model="filterText" ng-change="filterArticles()">
+                            <span class="input-group-addon glyphicon glyphicon-filter"></span>
+                        </div>
+                    </div>
+                    <dl ng-repeat="article in Articles | filter:filterText">
+                    <dt><a href="{{article.website}}">{{article.name}}</a> - {{article.date}}</dt>
+                    <dd>{{article.desc}}</dd>
+                </dl>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12">&nbsp;</div>
+    <div class="text-center">
+    <p><b> Oriol Albareda portfolio. </b></p>
+     <p>2015 - <a href="mailto:oriolalbareda@gmail.com">OriolAlbareda@gmail.com</a></p>
+  </div>
+      <div class="text-center col-md-4 col-md-offset-4">
+
+        <ul class="list-inline">
+            <li><a angular-ripple href="https://github.com/uripro1">Github</a>
+            </li>
+            <li><a angular-ripple href="#">Twitter</a>
+            </li>
+            <li><a angular-ripple href="http://facebook.com/urisntk">Facebook</a>
+            </li>
+            <li><a angular-ripple href="https://es.linkedin.com/pub/oriol-albareda-comino/104/284/865">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+</div>

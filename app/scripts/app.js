@@ -2,6 +2,7 @@
     'use strict';
     angular.module('App.Controllers', []);
     angular.module('portfolioApp', [
+        'ngGrid',
         'appverse.serverPush',
         'appverse.cache',
         'appverse.rest',
@@ -14,7 +15,8 @@
         'rt.resize',
         'chart.js',
         'appverse.router',
-        'App.Controllers', 'appverse.detection',
+        'App.Controllers',
+        'appverse.detection',
         'appverse.logging',
         'appverse.performance',
         'appverse.translate',
