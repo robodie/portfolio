@@ -38,7 +38,7 @@ angular.module('portfolioApp')
                 //////////////////////////
 
                 // We must configure states using $stateProvider.
-                $stateProvider.state('GFT', {url: '/GFT',templateUrl: 'views/GFT/GFT.html',controller: 'GFTController'})
+                $stateProvider
 
                 //////////
                 // Home //
@@ -58,26 +58,5 @@ angular.module('portfolioApp')
                     controller: 'contactController'
                 })
 
-                .state("theme", {
-                    // Use a url of "/" to set a states as the "index".
-                    url: "/theme",
-                    templateUrl: 'views/theme.html'
 
-                })
-
-                   .state("components", {
-                    // Use a url of "/" to set a states as the "index".
-                    url: "/components",
-                    templateUrl: 'views/components.html',
-                    controller: 'ComponentsController'
-                })
-
-                  .state("charts", {
-                    // Use a url of "/" to set a states as the "index".
-                    url: "/charts",
-                    templateUrl: 'views/charts.html',
-                    controller: 'ChartsController'
-                })
-
-                ;
             }]);
