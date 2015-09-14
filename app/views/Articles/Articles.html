@@ -20,7 +20,7 @@
                         </div>
                     </div>
                     <dl ng-repeat="article in Articles | filter:filterText">
-                    <dt><a href="{{article.website}}">{{article.name}}</a> - {{article.date}}</dt>
+                    <dt><a href="{{article.website}}">{{article.name}}</a> - {{article.date}}</dt><small>{{article.website}}</small>
                     <dd>{{article.desc}}</dd>
                 </dl>
                 </form>
