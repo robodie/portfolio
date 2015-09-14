@@ -1,0 +1,21 @@
+.navbar-brand{
+    visibility: hidden;
+}
+
+.dropdown-toggle{
+    cursor: pointer;
+}
+
+.dropdown-menu{
+    background-color: darkblue;
+}
+
+dt small {
+    font-weight: normal;
+    font-style: italic;
+    color:rgba(0,0,0,0.5);
+}
+
+accordion-group {
+    color:red;
+}
