@@ -28,10 +28,14 @@ Installing
 
 *Create a project folder and clone this repo
 ```bash
-```mkdir myApp
-```cd myApp
-```git clone https://github.com/uripro1/portfolio.git
+    $ mkdir myApp
+```bash
+    $ cd myApp
+```bash
+    $ git clone https://github.com/uripro1/portfolio.git
 
 *Install dependencies
-```npm i
-```bower i
+```bash
+    $ npm i
+```bash
+    $ bower i
