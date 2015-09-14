@@ -38,7 +38,17 @@ angular.module('portfolioApp')
                 //////////////////////////
 
                 // We must configure states using $stateProvider.
-                $stateProvider.state('Articles', {url: '/Articles',templateUrl: 'views/Articles/Articles.html',controller: 'ArticlesController'}).state('GFT', {url: '/GFT',templateUrl: 'views/GFT/GFT.html',controller: 'GFTController'})
+                $stateProvider
+                    .state('articles', {
+                    url: '/articles',
+                    templateUrl: 'views/Articles/Articles.html',
+                    controller: 'ArticlesController'
+                })
+                    .state('GFT', {
+                    url: '/GFT',
+                    templateUrl: 'views/GFT/GFT.html',
+                    controller: 'GFTController'
+                })
 
                 //////////
                 // Home //
